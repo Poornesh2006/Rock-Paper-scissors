@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> RockPaperScissors.com </title>
+        <link rel="stylesheet" href="rps3.css">
+        <link rel="stylesheet" href="rps4.css">
+    </head>
+    <body>
+        <div class="header">
+            <img class="question-icon" src="pics/question.png" onclick="toogleDiv()">
+            <div class="tooltip1">How to play ? </div>
+            <div class="instructions" id="instructions"><h1>Instructions To Play </h1>
+    
+                <h2>Objective:</h2>
+                <p>To defeat your opponent by choosing the correct hand symbol.</p>
+            
+                <h2>Choose your hand symbol:</h2>
+                <ul>
+                    <li><strong>Rock</strong>: A closed fist.Or <strong>click r to choose Rock.</strong></li>
+                    <li><strong>Paper</strong>: An open hand, flat and facing downwards.Or <strong> click p to choose Paper.</strong></li>
+                    <li><strong>Scissors</strong>: A fist with index and middle fingers extended to form a V shape.Or <strong> click s to choose Scissors.</strong></li>
+                </ul>
+            
+                <h2>Rules:</h2>
+                <ul>
+                    <li>Rock crushes Scissors.</li>
+                    <li>Scissors cuts Paper.</li>
+                    <li>Paper covers Rock.</li>
+                    <li>If both players choose the same shape, the game is a tie.</li>
+                </ul></div>
+            <img class="header-image" src="pics/rpshead.jpg">
+            <h1 class="head"> Rock&emsp;Paper&emsp;Scissors </h1>
+            <img class="header-image" src="pics/rpshead.jpg">
+            <img class="profile-icon" src="pics/profile-icon.png">
+        </div>
+        <div id="overall" onclick="normal()">
+            <div class="common">
+                <div class="rock-div" onclick="playGame('rock');">
+                    <img  class="icon-image" src="pics/cropped-rock.jpg">
+                    <button class="rock-button"> Rock </button>
+                </div>
+                <div  class="paper-div" onclick="playGame('paper');">
+                    <img class="icon-image" src="pics/cropped-paper.jpg"> 
+                    <button class="paper-button"> Paper </button>
+                </div>
+                <div class="scissors-div" onclick="playGame('scissors');">
+                    <img class="icon-image" src="pics/cropped-scissors.jpg">
+                    <button class="scissors-button"> Scissors </button>
+                </div>
+            </div>
+            <div class="move-reset">
+                <div class="move-display">
+                    <div class="moves">
+                        <p class="your-move"> You :&emsp;&emsp;&emsp13;</p>
+                        <img class="black-background-one" src="pics/cropped-black.jpg">
+                    </div>
+                    <div class="moves">
+                        <p class="computer-move">Computer :</p>
+                        <img class="black-background-two" src="pics/cropped-black.jpg">
+                    </div>
+                </div>
+                <button class="auto-play-button" onclick="autoplay()">Auto Play</button>
+                <button class="b3" onclick="bo3()">Best of three</button>
+            </div>
+            <div class="score-reset">
+                <div>
+                    <h1 class="wins-display">Wins : 0 </h1>
+                    <h1 class="tie-display">Tie : 0 </h1>
+                    <h1 class="losses-display">Losses : 0 </h1>
+                </div>
+                <div class="remove-div">
+                    <h1 id="removeText"> </h1>
+                </div>
+                <button id="reset-button" onclick = "display()"> Reset Score </button>
+            </div>
+        </div>
+        
+        <script src="rps2.js"></script>
+    </body>
+</html>

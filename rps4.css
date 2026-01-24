@@ -1,0 +1,69 @@
+.common{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:20px;
+    margin-bottom:30px;
+}
+.rock-div , .paper-div , .scissors-div{
+    width:280px;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    cursor: pointer;
+    border-radius:10px;
+    padding-top:10px;
+    margin-top:15px;
+    overflow: hidden;
+}
+.rock-div:hover , .paper-div:hover , .scissors-div:hover{
+    opacity:0.89;
+    box-shadow: 5px 5px 10px grey;
+}
+.rock-div:active{
+    background-color: rgb(244, 155, 213);
+    opacity:0.5;
+}
+.paper-div:active{
+    background-color: rgb(243, 240, 105);
+    opacity:0.5;
+}
+.scissors-div:active{
+    background-color: rgb(157, 237, 240);
+    opacity:0.5;
+}
+
+.icon-image{
+    border-style:none;
+    border-radius:100%;
+    margin:6px 10px;
+    margin-left:30px;
+    object-fit: cover;
+    transition:0.1s ease;
+}
+.icon-image:hover{
+    transform:scale(1.17);
+}
+
+.rock-button ,.paper-button , .scissors-button {
+    border:none;
+    border-bottom: 4px solid rgb(25, 154, 190);
+    border-radius: 7px;
+    background-color: white;
+    color:rgb(25, 154, 190);
+    font-weight: bold;
+    font-size: 25px;
+    height:50px;
+    width:250px;
+    margin-bottom:10px;
+    cursor: pointer;
+}
+.rock-button:active{
+    background-color: rgb(244, 155, 213);
+}
+.paper-button:active{
+    background-color: rgb(243, 240, 105);
+}
+.scissors-button:active{
+    background-color: rgb(157, 237, 240);
+}
